@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রিয়তমা চাঁদ</title>
+    <style>
+        /* General Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to top, #0d0d1d, #1e1e30);
+            font-family: 'Georgia', serif;
+            color: #ffd1dc;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Moon and Tree Shadow Styling */
+        .moon {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle, #ffffff, #d9d9d9 50%);
+            border-radius: 50%;
+            box-shadow: 0 0 60px rgba(255, 255, 255, 0.5);
+        }
+
+        .tree-shadow {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 35vh;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            clip-path: polygon(0% 100%, 10% 65%, 20% 85%, 30% 50%, 40% 75%, 50% 40%, 60% 65%, 70% 35%, 80% 55%, 90% 30%, 100% 50%, 100% 100%);
+        }
+
+        /* Poem Container Styling */
+        .poem-container {
+            position: relative;
+            max-width: 600px;
+            padding: 20px 25px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffd1dc;
+            text-align: left;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            font-family: 'Cursive', serif;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            animation: fadeIn 3s ease;
+        }
+
+        .poem-line {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeLine 1s forwards;
+        }
+
+        .poem-line:nth-child(even) { animation-delay: 0.2s; }
+        .poem-line:nth-child(odd) { animation-delay: 0.4s; }
+
+        @keyframes fadeLine {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Moon and Tree Shadow -->
+    <div class="moon"></div>
+    <div class="tree-shadow"></div>
+
+    <!-- Poem Container -->
+    <div class="poem-container" id="poem">
+        <div class="poem-line">প্রিয়তমা চাঁদ, তুমি আমার আকাশের একান্তই নিজস্ব তারকা,</div>
+        <div class="poem-line">তোমার আলোয় আমার জীবন আলোকিত হয়ে ওঠে প্রতিটি রাতে।</div>
+        <div class="poem-line">তুমি আমার সেই স্বপ্ন, যে স্বপ্নে আমি অনন্তকালের প্রতিশ্রুতি খুঁজি।</div>
+        <div class="poem-line">তোমার হাসিতে আমার সকল ব্যথা নিমেষেই বিলীন হয়ে যায়।</div>
+        <div class="poem-line">তুমি আমার হৃদয়ের প্রতিটি বিট, প্রতিটি মুহূর্তে তুমি আছো।</div>
+        <div class="poem-line">আমার সমস্ত ভালোবাসা শুধু তোমার জন্য, চিরকাল, চিরদিন।</div>
+    </div>
+
+    <!-- YouTube Lofi Background Music -->
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/_9URguQ8-Qg?si=sOaBrHdQI0kpLHlj&autoplay=1&loop=1&playlist=_9URguQ8-Qg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</body>
+</html>
